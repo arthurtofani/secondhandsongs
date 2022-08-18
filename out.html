@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>  Database statistics |  SecondHandSongs </title>
+                    <meta name="description" content="Find out who performed the original version of a particular song, or who covered or sampled that song. Unlike many related
+                      sites, we try to be as complete as possible (not just performer and song title, but also songwriters and original releases) and order the data in a reusable and maintainable way."/>
+                <meta name="keywords"
+              content="Covers, Cover Songs, Samples, Tributes, Music"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                    <link rel="apple-touch-icon-precomposed" href="/art/apple-touch-icon-precomposed.png">
+            <link rel="apple-touch-icon-precomposed" sizes="72x72"
+                  href="/art/apple-touch-icon-72x72-precomposed.png">
+            <link rel="apple-touch-icon-precomposed" sizes="76x76"
+                  href="/art/apple-touch-icon-76x76-precomposed.png">
+            <link rel="apple-touch-icon-precomposed" sizes="114x114"
+                  href="/art/apple-touch-icon-114x114-precomposed.png">
+            <link rel="apple-touch-icon-precomposed" sizes="120x120"
+                  href="/art/apple-touch-icon-120x120-precomposed.png">
+            <link rel="apple-touch-icon-precomposed" sizes="144x144"
+                  href="/art/apple-touch-icon-144x144-precomposed.png">
+            <link rel="apple-touch-icon-precomposed" sizes="152x152"
+                  href="/art/apple-touch-icon-152x152-precomposed.png">
+            <link rel="icon" href="/art/favicon.png">
+            <!--[if IE]>
+            <link rel="shortcut icon" href="/favicon.ico"><![endif]-->
+            <!-- or, set /favicon.ico for IE10 win -->
+            <meta name="msapplication-TileColor" content="#0b9dae">
+            <meta name="msapplication-TileImage" content="/art/tileicon.png">
+        
+        <link rel="alternate" type="application/rss+xml" title="Second Hand Songs new submissions (RSS 2.0)"
+              href="/rss/new.xml"/>
+
+                    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,400,300,600,700,800&subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic&display=swap'
+                  rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" href="/build/css/app.64d0891e.css">
+        
+                    <script src="/build/runtime.9de9f20e.js"></script><script src="/build/js/app.9698af28.js"></script>
+                        <script src="https://www.youtube.com/iframe_api"></script>
+        
+        <script type="text/javascript">
+            window.cookieconsent_options = {
+                "message": "We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners",
+                "dismiss": "Got it",
+                "learnMore": "Learn more",
+                "link": "https://secondhandsongs.com/page/CookiePolicy",
+                "theme": "dark-top"
+            };
+        </script>
+
+        <script defer type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+
+                    <!-- Ads by Next Millenium -->
+            <script defer src="//powerad.ai/script.js"></script>
+        
+                    <script defer src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=bbd8d016-c5be-4bdc-8815-26cf84dfa757"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q57SKGY68F"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Q57SKGY68F');
+        </script>
+
+    </head>
+ 
+    <body class="">
+    <div class="loading">
+        <div class="loader"></div>
+    </div>
+    <input type="hidden" name="_ds" value="0"/>
+                <section id="header">
+    <header class="container">
+        <div class="row">             <div class="d-none d-md-block col-lg-4 col-md-5">
+                <a class="logo" href="/">
+                    <img src="/art/logo.png" alt="Second Hand Songs - A Cover Songs Database">
+                </a>
+            </div>
+            <nav id="top-menu" class="navbar navbar-expand navbar-dark col-lg-8 col-md-7">
+                <ul id="top-menu-navbar-collapse" class="nav navbar-nav navbar-right">
+                    <li class="nav-item d-block d-md-none">
+                        <a class="nav-link logo" href="/">
+                            <img src="/art/logo.png" alt="Second Hand Songs - A Cover Songs Database">
+                        </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/explore">Explore</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/forum">Discuss
+                                                    </a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/participate">Participate
+                                                    </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/quiz">Play </a>
+                    </li>
+                                            <li class="nav-item accent"><a class="nav-link" href="/login?ref=%2Fstatistics%2Fstats_work_covered%3FpageSize%3D6">Sign In</a></li>
+                        <li class="nav-item social d-none d-sm-flex">
+                            <a class="nav-link" href="https://www.facebook.com/pages/SecondHandSongs/25077961981"
+                               title="Like us on Facebook">
+                                <i class="fa fa-facebook-square fa-lg "></i>
+                            </a>
+                            <a class="nav-link" href="https://twitter.com/SHSongs" title="Follow us on twitter">
+                                <i class="fa fa-twitter-square fa-lg "></i>
+                            </a>
+                        </li>
+                                    </ul>
+            </nav>
+        </div>
+    </header>
+</section>
+                    <section id="topsearch">
+            <div class="container">
+                <form class="form-inline row align-items-center" id="topsearch-form" action="/search">
+                    <div class="d-none d-sm-block col-sm-3">
+                        <h2 class="text-right">Search</h2>
+                    </div>
+                    <div class="col col-sm-6">
+                        <div class="input-group">
+                            <input class="form-control" type="text" id="topsearch-input" name="search_text" tabindex="1"
+                                   value=""
+                                   placeholder="Find cover songs, artists and more"/>
+                            <div class="input-group-btn">
+                                <button id="topsearch-button" class="btn" accesskey="z">Go</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-sm-block col-sm-3">
+                        <a href="/search/work" class="section-more">Detailed search</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+                    <section id="alert">
+    <section class="alert-danger">
+        <div class="container" id="alert-container">
+            <div class="errormsg alert" style="display:none;">
+                <h4>Error!</h4>
+                <p class="my-0"></p>
+            </div>
+        </div>
+    </section>
+    <section class="alert-warning">
+        <div class="container">
+
+                            <div class="warning alert" style="display:none;">
+                    <h4>Warning</h4>
+                    <p></p>
+                    <input class="btn btn-secondary" name="override" type="button" value="Confirm"/>
+                </div>
+                                </div>
+
+
+    </section>
+    <section class="alert-success">
+        <div class="container">
+                        <div class="successmsg alert" style="display:none;">
+                
+            </div>
+        </div>
+    </section>
+</section>
+                        <section id="main">
+            <section id="content-tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul class="nav nav-tabs nav-justified" id="nav-entity">
+                        <li class="nav-item">
+                            <a class="nav-link " href="/explore">
+                                <i class="fa fa-compass fa- "></i> Explore the database
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/statistics">
+                                <i class="fa fa-bar-chart-o fa- "></i> Database statistics
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                                        
+                    <div id="root_wrapper" class="controller" data-service="/statistics/stats_work_covered" data-model="IwuGRhtLJ_LHMNPXVLuUlbcM-DmiJhvOE7Co5I3h-DRT34DdwRGsH1IwlbJ5ty8j_1a1ZZEzAQclubXYkRUnmbOJYM2HIA_pvGGmpqwS5R39fhrC5v-B_ZXH9OBQozNugULTOAHsidr3IVTEwJIAJH4E9FcdN9OS3elXYlX1uwWnE1IJ1WU8oLN5yemSdJ86.74J1HZTVxZXYe3aJydnakg==" data-route="statistics">
+    <div  id="root" > <div id="root">
+    <section class="my-3">
+                    <ul class="nav nav-pills nav-justified">
+                                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="browse-song" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Song statistics
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="browse-song">
+                                                            <a href="/statistics/stats_work_covered?pageSize=6" class="dropdown-item refresh-click active"
+                                   id="root.list.stats_work_covered">Most covered songs</a>
+                                                            <a href="/statistics/stats_most_covered_work_per_original_year?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_most_covered_work_per_original_year">Most covered songs per original year</a>
+                                                            <a href="/statistics/stats_most_covered_work_per_cover_year?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_most_covered_work_per_cover_year">Most covered songs per cover year</a>
+                                                            <a href="/statistics/stats_work_hits?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_work_hits">Works with most hit songs</a>
+                                                            <a href="/statistics/stats_most_sampled_recording?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_most_sampled_recording">Most sampled recordings</a>
+                                                            <a href="/statistics/stats_performance_rating?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_performance_rating">Best/worst rated performances</a>
+                                                            <a href="/statistics/stats_covers_per_year?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_covers_per_year">Number of covers per year</a>
+                                                            <a href="/statistics/stats_samples_per_year?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_samples_per_year">Number of samples per year</a>
+                                                            <a href="/statistics/stats_most_used_language?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_most_used_language">Most used languages</a>
+                                                    </div>
+                    </li>
+                                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="browse-artist" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Artist statistics
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="browse-artist">
+                                                            <a href="/statistics/stats_most_covered_author?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_most_covered_author">Most covered authors</a>
+                                                            <a href="/statistics/stats_most_covered_performer?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_most_covered_performer">Most covered performers</a>
+                                                            <a href="/statistics/stats_most_covering_performer?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_most_covering_performer">Most covering performers</a>
+                                                            <a href="/statistics/stats_most_sampled_performer?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_most_sampled_performer">Most sampled performers</a>
+                                                            <a href="/statistics/stats_most_sampling_performer?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_most_sampling_performer">Most sampling performers</a>
+                                                            <a href="/statistics/stats_most_tributed_artist?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_most_tributed_artist">Most tributed artists</a>
+                                                            <a href="/statistics/stats_artist_rating?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_artist_rating">Best/worst rated artists</a>
+                                                            <a href="/statistics/stats_country_artists?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_country_artists">Countries with most artists</a>
+                                                    </div>
+                    </li>
+                                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="browse-release" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Release statistics
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="browse-release">
+                                                            <a href="/statistics/stats_release_covers?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_release_covers">Most covered releases</a>
+                                                            <a href="/statistics/stats_label_releases?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_label_releases">Labels with most releases</a>
+                                                    </div>
+                    </li>
+                                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="browse-growth" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Growth statistics
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="browse-growth">
+                                                            <a href="/statistics/stats_performances_over_time?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_performances_over_time">Performances over time</a>
+                                                            <a href="/statistics/stats_works_over_time?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_works_over_time">Works over time</a>
+                                                            <a href="/statistics/stats_videos_over_time?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_videos_over_time">Videos over time</a>
+                                                            <a href="/statistics/stats_webcovers_over_time?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_webcovers_over_time">Web covers over time</a>
+                                                            <a href="/statistics/stats_users_over_time?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_users_over_time">Users over time</a>
+                                                    </div>
+                    </li>
+                                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="browse-user" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            User statistics
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="browse-user">
+                                                            <a href="/statistics/stats_user_submissions?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_user_submissions">Most submitting</a>
+                                                            <a href="/statistics/stats_user_videos?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_user_videos">Most videos added</a>
+                                                            <a href="/statistics/stats_user_web_covers?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_user_web_covers">Most web covers added</a>
+                                                            <a href="/statistics/stats_users_born?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_users_born">Users per birth year</a>
+                                                    </div>
+                    </li>
+                                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="browse-other" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Other statistics
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="browse-other">
+                                                            <a href="/statistics/stats_external_links_per_source_type?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_external_links_per_source_type">External links</a>
+                                                            <a href="/statistics/stats_external_id?pageSize=6" class="dropdown-item refresh-click "
+                                   id="root.list.stats_external_id">External ID counts</a>
+                                                    </div>
+                    </li>
+                            </ul>
+            </section>
+    <section class="mt-3">
+        <h2 id="titleHeader">Most covered songs</h2>
+        <p></p>
+                    <form class="refresh data form-horizontal" id="root.filter" action="/statistics/stats_work_covered" method="post" enctype="multipart/form-data">
+<input type="hidden" name="_model" id="_model" value="B1KnblBriCXnOZ9VDPL90u0mPGtKE5ccUPapLqcqEPt8NZJV01bQ4pmEMHqfFXA0zcr17qG-i0O8SMWuSSCgT52R7Uv_dj8V4TEN4CFgrnWDy65Qg2z5YxFuJYiJotytcAT5ZUmPcj2QFxLJzklrU7myLmvkjuD5uRx1ym7ZnE1INBBCukukGg4_Kc2f4N-0.awVT-ZPnqYn7mPxePo5OIA=="/> 
+<input type="hidden" name="_route" id="_route" value="statistics"/> 
+<input type="hidden" name="_click" value=""/> 
+<input type="hidden" name="_mode" value="sync"/> 
+<div class="row"><div id="root.filter.ownerLine" style="display:none;"></div> <div id="root.filter.creatorLine" style="display:none;"></div> <div id="root.filter.modifierLine" style="display:none;"></div> <div class="form-group form-group-2col " id="root.filter.adaptationLine">
+  <label class="control-label-2col">Adaptations</label>
+<div class="control-contents-2col"><div class="row form-row"><span class="col-12 error-field" id="error-field-root.filter.adaptationLine.adaptationExcluded"></span><div  id="root.filter.adaptationLine.adaptationExcluded" class="col" > <label for="root.filter.adaptationLine.adaptationExcluded.input" class="label-after-control"><input  class="refresh-change mt-2" type="checkbox" name="root.filter.adaptationLine.adaptationExcluded" id="root.filter.adaptationLine.adaptationExcluded.input" data-local-id="adaptationExcluded" tabindex="1"> </input>Exclude adaptations</label><input type="hidden" name="root.filter.adaptationLine.adaptationExcluded.visible" value="shown"/></div> </div></div></div> <div class="form-group form-group-2col " id="root.filter.genreLine">
+  <label class="control-label-2col">Genre</label>
+<div class="control-contents-2col"><div class="row form-row"><span class="col-12 error-field" id="error-field-root.filter.genreLine.christmasExcluded"></span><div  id="root.filter.genreLine.christmasExcluded" class="col" > <label for="root.filter.genreLine.christmasExcluded.input" class="label-after-control"><input  class="refresh-change mt-2" type="checkbox" name="root.filter.genreLine.christmasExcluded" id="root.filter.genreLine.christmasExcluded.input" data-local-id="christmasExcluded" tabindex="1"> </input>Exclude christmas songs</label><input type="hidden" name="root.filter.genreLine.christmasExcluded.visible" value="shown"/></div> </div></div></div> <div id="root.filter.artistType" style="display:none;"></div> <div class="form-group form-group-2col ">
+  <label class="control-label-2col">Language</label>
+<div class="control-contents-2col"><div class="row form-row"><span class="col-12 error-field" id="error-field-root.filter.language"></span><div  id="root.filter.language" class="col" > <select  class="form-control refresh-change selectbox" name="root.filter.language" id="root.filter.language.input" size="1" data-local-id="language" tabindex="1" ><option value="">any</option><option value="130" >English</option><option value="146" >French</option><option value="160" >German</option><option value="143" >Finnish</option><option value="445" >Swedish</option><option value="438" >Spanish</option><option value="122" >Dutch</option><option value="211" >Italian</option><option value="110" >Czech</option><option value="375" >Portuguese</option><option value="112" >Danish</option><option value="337" >Norwegian</option><option value="192" >Icelandic</option><option value="212" >Japanese</option><option value="108" >Croatian</option><option value="86" >Chinese</option><option value="172" >Greek, Modern (1453-)</option><option value="314" >Multiple languages</option><option value="189" >Hungarian</option><option value="391" >Russian</option><option value="181" >Hebrew</option><option value="374" >Polish</option><option value="408" >Serbian</option><option value="72" >Catalan</option><option value="474" >Turkish</option><option value="339" >Norwegian Nynorsk</option><option value="425" >Slovak</option><option value="426" >Slovenian</option><option value="135" >Estonian</option><option value="501" >Welsh</option><option value="388" >Romanian</option><option value="261" >Limburgan</option><option value="507" >Yiddish</option><option value="257" >Latin</option><option value="149" >Frisian</option><option value="9" >Afrikaans</option><option value="265" >Lithuanian</option><option value="26" >Artificial (Other)</option><option value="447" >Tagalog</option><option value="103" >Creoles and pidgins, English-based (Other)</option><option value="66" >Bulgarian</option><option value="19" >Arabic</option><option value="185" >Hindi</option><option value="243" >Korean</option><option value="485" >Undetermined</option><option value="483" >Ukrainian</option><option value="180" >Hawaiian</option><option value="258" >Latvian</option><option value="285" >Malay</option><option value="294" >Maori</option><option value="153" >Gaelic</option><option value="368" >Persian</option><option value="200" >Indonesian</option><option value="104" >Creoles and pidgins, French-based (Other)</option><option value="514" >Zulu</option><option value="239" >Klingon</option><option value="334" >Northern Sami</option><option value="62" >Bosnian</option><option value="50" >Belarusian</option><option value="47" >Basque</option><option value="207" >Irish</option><option value="232" >Khmer</option><option value="306" >Miscellaneous languages</option><option value="493" >Vietnamese</option><option value="154" >Galician</option><option value="389" >Romany</option><option value="508" >Yoruba</option><option value="161" >German, Low</option><option value="443" >Swahili</option><option value="478" >Tuvinian</option><option value="502" >Wolof</option><option value="121" >Duala</option><option value="395" >Samoan</option><option value="503" >Xhosa</option><option value="64" >Breton</option><option value="99" >Corsican</option><option value="105" >Creoles and pidgins, Portuguese-based (Other)</option><option value="140" >Faroese</option><option value="312" >Mongolian</option><option value="400" >Sardinian</option><option value="448" >Tahitian</option><option value="21" >Aramaic</option><option value="30" >Australian languages</option><option value="41" >Bambara</option><option value="102" >Creoles and pidgins(Other)</option><option value="145" >Fon</option><option value="277" >Luxembourgish</option><option value="279" >Macedonian</option><option value="290" >Mandingo</option><option value="333" >North American Indian (Other)</option><option value="379" >Punjabi</option><option value="394" >Sami languages (Other)</option><option value="457" >Thai</option><option value="470" >Tsonga</option><option value="487" >Urdu</option><option value="16" >Altaic (Other)</option><option value="25" >Armenian</option><option value="28" >Asturian</option><option value="31" >Austronesian (Other)</option><option value="45" >Basa</option><option value="67" >Buriat</option><option value="98" >Cornish</option><option value="100" >Cree</option><option value="124" >Dyula</option><option value="132" >English, Old (ca.450-1100)</option><option value="164" >Germanic (Other)</option><option value="171" >Greek, Ancient (to 1453)</option><option value="177" >Haitian</option><option value="205" >Inupiaq</option><option value="206" >Iranian (Other)</option><option value="210" >Iroquoian languages</option><option value="253" >Ladino</option><option value="264" >Lingala</option><option value="289" >Mandar</option><option value="323" >Neapolitan</option><option value="338" >Norwegian Bokmål</option><option value="370" >Philippine (Other)</option><option value="381" >Quechua</option><option value="398" >Sanskrit</option><option value="403" >Scots</option><option value="413" >Sicilian</option><option value="429" >Songhai</option><option value="1" >Abkhazian</option><option value="2" >Achinese</option><option value="3" >Acoli</option><option value="4" >Adangme</option><option value="5" >Adygei</option><option value="6" >Adyghe</option><option value="7" >Afar</option><option value="8" >Afrihili</option><option value="10" >Afro-Asiatic (Other)</option><option value="11" >Akan</option><option value="12" >Akkadian</option><option value="13" >Albanian</option><option value="14" >Aleut</option><option value="15" >Algonquian languages</option><option value="17" >Amharic</option><option value="18" >Apache languages</option><option value="20" >Aragonese</option><option value="22" >Arapaho</option><option value="23" >Araucanian</option><option value="24" >Arawak</option><option value="27" >Assamese</option><option value="29" >Athapascan languages</option><option value="32" >Avaric</option><option value="33" >Avestan</option><option value="34" >Awadhi</option><option value="35" >Aymara</option><option value="36" >Azerbaijani</option><option value="37" >Bable</option><option value="38" >Balinese</option><option value="39" >Baltic (Other)</option><option value="40" >Baluchi</option><option value="42" >Bamileke languages</option><option value="43" >Banda</option><option value="44" >Bantu (Other)</option><option value="46" >Bashkir</option><option value="48" >Batak (Indonesia)</option><option value="49" >Beja</option><option value="51" >Bemba</option><option value="52" >Bengali</option><option value="53" >Berber (Other)</option><option value="54" >Bhojpuri</option><option value="55" >Bihari</option><option value="56" >Bikol</option><option value="57" >Bilin</option><option value="58" >Bini</option><option value="59" >Bislama</option><option value="60" >Blin</option><option value="63" >Braj</option><option value="65" >Buginese</option><option value="68" >Burmese</option><option value="69" >Caddo</option><option value="70" >Carib</option><option value="73" >Caucasian (Other)</option><option value="74" >Cebuano</option><option value="75" >Celtic (Other)</option><option value="76" >Central American Indian (Other)</option><option value="77" >Chagatai</option><option value="78" >Chamic languages</option><option value="79" >Chamorro</option><option value="80" >Chechen</option><option value="81" >Cherokee</option><option value="83" >Cheyenne</option><option value="84" >Chibcha</option><option value="85" >Chichewa</option><option value="87" >Chinook jargon</option><option value="88" >Chipewyan</option><option value="89" >Choctaw</option><option value="91" >Church Slavic</option><option value="93" >Chuukese</option><option value="94" >Chuvash</option><option value="95" >Classical Nepal Bhasa</option><option value="96" >Classical Newari</option><option value="97" >Coptic</option><option value="101" >Creek</option><option value="106" >Crimean Tatar</option><option value="107" >Crimean Turkish</option><option value="109" >Cushitic (Other)</option><option value="111" >Dakota</option><option value="113" >Dargwa</option><option value="114" >Dayak</option><option value="115" >Delaware</option><option value="116" >Dinka</option><option value="117" >Divehi</option><option value="118" >Dogri</option><option value="119" >Dogrib</option><option value="120" >Dravidian (Other)</option><option value="123" >Dutch, Middle (ca. 1050-1350)</option><option value="125" >Dzongkha</option><option value="126" >Efik</option><option value="127" >Egyptian (Ancient)</option><option value="128" >Ekajuk</option><option value="129" >Elamite</option><option value="131" >English, Middle (1100-1500)</option><option value="133" >Erzya</option><option value="134" >Esperanto</option><option value="136" >Ewe</option><option value="137" >Ewondo</option><option value="138" >Fang</option><option value="139" >Fanti</option><option value="141" >Fijian</option><option value="142" >Filipino</option><option value="144" >Finno-Ugrian (Other)</option><option value="147" >French, Middle (ca.1400-1600)</option><option value="148" >French, Old (842-ca.1400)</option><option value="150" >Friulian</option><option value="151" >Fulah</option><option value="152" >Ga</option><option value="155" >Ganda</option><option value="156" >Gayo</option><option value="157" >Gbaya</option><option value="158" >Geez</option><option value="159" >Georgian</option><option value="162" >German, Middle High (ca.1050-1500)</option><option value="163" >German, Old High (ca.750-1050)</option><option value="166" >Gilbertese</option><option value="167" >Gondi</option><option value="168" >Gorontalo</option><option value="169" >Gothic</option><option value="170" >Grebo</option><option value="173" >Guarani</option><option value="174" >Gujarati</option><option value="175" >Gwich´in</option><option value="176" >Haida</option><option value="179" >Hausa</option><option value="182" >Herero</option><option value="183" >Hiligaynon</option><option value="184" >Himachali</option><option value="186" >Hiri Motu</option><option value="187" >Hittite</option><option value="188" >Hmong</option><option value="190" >Hupa</option><option value="191" >Iban</option><option value="193" >Ido</option><option value="194" >Igbo</option><option value="195" >Ijo</option><option value="196" >Iloko</option><option value="197" >Inari Sami</option><option value="198" >Indic (Other)</option><option value="199" >Indo-European (Other)</option><option value="201" >Ingush</option><option value="202" >Interlingua</option><option value="203" >Interlingue</option><option value="204" >Inuktitut</option><option value="208" >Irish, Middle (900-1200)</option><option value="209" >Irish, Old (to 900)</option><option value="213" >Javanese</option><option value="214" >Judeo-Arabic</option><option value="215" >Judeo-Persian</option><option value="216" >Kabardian</option><option value="217" >Kabyle</option><option value="218" >Kachin</option><option value="219" >Kalaallisut</option><option value="220" >Kalmyk</option><option value="221" >Kamba</option><option value="222" >Kannada</option><option value="223" >Kanuri</option><option value="225" >Kara-Kalpak</option><option value="224" >Karachay-Balkar</option><option value="226" >Karen</option><option value="227" >Kashmiri</option><option value="228" >Kashubian</option><option value="229" >Kawi</option><option value="230" >Kazakh</option><option value="231" >Khasi</option><option value="233" >Khoisan (Other)</option><option value="234" >Khotanese</option><option value="235" >Kikuyu</option><option value="236" >Kimbundu</option><option value="237" >Kinyarwanda</option><option value="238" >Kirghiz</option><option value="240" >Komi</option><option value="241" >Kongo</option><option value="242" >Konkani</option><option value="244" >Kosraean</option><option value="245" >Kpelle</option><option value="246" >Kru</option><option value="247" >Kuanyama</option><option value="248" >Kumyk</option><option value="249" >Kurdish</option><option value="250" >Kurukh</option><option value="251" >Kutenai</option><option value="254" >Lahnda</option><option value="255" >Lamba</option><option value="256" >Lao</option><option value="260" >Lezghian</option><option value="266" >Lojban</option><option value="267" >Low German</option><option value="268" >Low Saxon</option><option value="269" >Lower Sorbian</option><option value="270" >Lozi</option><option value="271" >Luba-Katanga</option><option value="272" >Luba-Lulua</option><option value="273" >Luiseno</option><option value="274" >Lule Sami</option><option value="275" >Lunda</option><option value="276" >Luo (Kenya and Tanzania)</option><option value="278" >Lushai</option><option value="280" >Madurese</option><option value="281" >Magahi</option><option value="282" >Maithili</option><option value="283" >Makasar</option><option value="284" >Malagasy</option><option value="286" >Malayalam</option><option value="287" >Maltese</option><option value="288" >Manchu</option><option value="291" >Manipuri</option><option value="292" >Manobo languages</option><option value="293" >Manx</option><option value="295" >Marathi</option><option value="296" >Mari</option><option value="297" >Marshallese</option><option value="298" >Marwari</option><option value="299" >Masai</option><option value="300" >Mayan languages</option><option value="301" >Mende</option><option value="303" >Mi&#039;kmaq</option><option value="302" >Micmac</option><option value="304" >Minangkabau</option><option value="305" >Mirandese</option><option value="307" >Mohawk</option><option value="308" >Moksha</option><option value="310" >Mon-Khmer (Other)</option><option value="311" >Mongo</option><option value="313" >Mossi</option><option value="315" >Munda languages</option><option value="316" >Nahuatl</option><option value="317" >Nauru</option><option value="319" >Navajo</option><option value="320" >Ndebele, North</option><option value="321" >Ndebele, South</option><option value="322" >Ndonga</option><option value="324" >Nepal Bhasa</option><option value="325" >Nepali</option><option value="326" >Newari</option><option value="327" >Nias</option><option value="328" >Niger-Kordofanian (Other)</option><option value="329" >Nilo-Saharan (Other)</option><option value="330" >Niuean</option><option value="331" >Nogai</option><option value="332" >Norse, Old</option><option value="336" >North Ndebele</option><option value="335" >Northern Sotho</option><option value="340" >Nubian languages</option><option value="341" >Nyamwezi</option><option value="343" >Nyankole</option><option value="345" >Nyoro</option><option value="346" >Nzima</option><option value="347" >Occitan (post 1500)</option><option value="348" >Ojibwa</option><option value="351" >Old Newari</option><option value="353" >Oriya</option><option value="354" >Oromo</option><option value="355" >Osage</option><option value="356" >Ossetian</option><option value="358" >Otomian languages</option><option value="359" >Pahlavi</option><option value="360" >Palauan</option><option value="361" >Pali</option><option value="362" >Pampanga</option><option value="363" >Pangasinan</option><option value="365" >Papiamento</option><option value="366" >Papuan (Other)</option><option value="367" >Pedi</option><option value="369" >Persian, Old (ca.600-400)</option><option value="371" >Phoenician</option><option value="372" >Pilipino</option><option value="373" >Pohnpeian</option><option value="376" >Prakrit languages</option><option value="377" >Provençal</option><option value="378" >Provençal, Old (to 1500)</option><option value="380" >Pushto</option><option value="382" >Raeto-Romance</option><option value="383" >Rajasthani</option><option value="384" >Rapanui</option><option value="385" >Rarotongan</option><option value="386" >Reserved for local user</option><option value="387" >Romance (Other)</option><option value="390" >Rundi</option><option value="392" >Salishan languages</option><option value="393" >Samaritan Aramaic</option><option value="396" >Sandawe</option><option value="397" >Sango</option><option value="399" >Santali</option><option value="401" >Sasak</option><option value="402" >Saxon, Low</option><option value="405" >Selkup</option><option value="406" >Semitic (Other)</option><option value="407" >Sepedi</option><option value="409" >Serer</option><option value="410" >Shan</option><option value="411" >Shona</option><option value="412" >Sichuan Yi</option><option value="414" >Sidamo</option><option value="415" >Sign languages</option><option value="416" >Siksika</option><option value="417" >Sindhi</option><option value="418" >Sinhala</option><option value="420" >Sino-Tibetan (Other)</option><option value="421" >Siouan languages</option><option value="422" >Skolt Sami</option><option value="423" >Slave (Athapascan)</option><option value="424" >Slavic (Other)</option><option value="427" >Sogdian</option><option value="428" >Somali</option><option value="430" >Soninke</option><option value="431" >Sorbian languages</option><option value="432" >Sotho, Northern</option><option value="433" >Sotho, Southern</option><option value="434" >South American Indian (Other)</option><option value="437" >South Ndebele</option><option value="435" >Southern Altai</option><option value="436" >Southern Sami</option><option value="439" >Sukuma</option><option value="440" >Sumerian</option><option value="441" >Sundanese</option><option value="442" >Susu</option><option value="444" >Swati</option><option value="446" >Syriac</option><option value="449" >Tai (Other)</option><option value="450" >Tajik</option><option value="451" >Tamashek</option><option value="452" >Tamil</option><option value="453" >Tatar</option><option value="454" >Telugu</option><option value="455" >Tereno</option><option value="456" >Tetum</option><option value="458" >Tibetan</option><option value="459" >Tigre</option><option value="460" >Tigrinya</option><option value="461" >Timne</option><option value="462" >Tiv</option><option value="464" >Tlingit</option><option value="465" >Tok Pisin</option><option value="466" >Tokelau</option><option value="467" >Tonga (Nyasa)</option><option value="468" >Tonga (Tonga Islands)</option><option value="469" >Tsimshian</option><option value="471" >Tswana</option><option value="472" >Tumbuka</option><option value="473" >Tupi languages</option><option value="475" >Turkish, Ottoman (1500-1928)</option><option value="476" >Turkmen</option><option value="477" >Tuvalu</option><option value="479" >Twi</option><option value="480" >Udmurt</option><option value="481" >Ugaritic</option><option value="482" >Uighur</option><option value="484" >Umbundu</option><option value="486" >Upper Sorbian</option><option value="489" >Uzbek</option><option value="490" >Vai</option><option value="492" >Venda</option><option value="494" >Volapük</option><option value="495" >Votic</option><option value="496" >Wakashan languages</option><option value="497" >Walamo</option><option value="498" >Walloon</option><option value="499" >Waray</option><option value="500" >Washo</option><option value="504" >Yakut</option><option value="505" >Yao</option><option value="506" >Yapese</option><option value="509" >Yupik languages</option><option value="510" >Zande</option><option value="511" >Zapotec</option><option value="512" >Zenaga</option><option value="513" >Zhuang</option><option value="515" >Zuni</option><option value="463" >tlhIngan-Hol</option></select></div> </div></div></div> <div class="form-group form-group-2col ">
+  <label class="control-label-2col">Instrumental</label>
+<div class="control-contents-2col"><div class="row form-row"><span class="col-12 error-field" id="error-field-root.filter.instrumental"></span><div  id="root.filter.instrumental" class="col" > <select  class="form-control refresh-change selectbox" name="root.filter.instrumental" id="root.filter.instrumental.input" size="1" data-local-id="instrumental" tabindex="1" ><option value="">any</option><option value="yes" >yes</option><option value="no" >no</option></select></div> </div></div></div> <div class="form-group form-group-2col ">
+  <label class="control-label-2col">Year(s)</label>
+<div class="control-contents-2col"><div class="row form-row"><span class="col-12 error-field" id="error-field-root.filter.year"></span><div  id="root.filter.year" class="col" > <input  class="form-control refresh-change  refresh-paste" type="text" autocomplete="off" name="root.filter.year" id="root.filter.year.input" value="" data-error-message="" data-local-id="year" tabindex="1" placeholder="exact (e.g. 2000) or range (e.g. 2000-2009)" /></div> </div></div></div> <div id="root.filter.sourceLine" style="display:none;"></div> </div><noscript><div class="form-group mb-3"><div class="button-wrapper"><button class="btn btn-primary refresh-formsubmit" type="submit" id="root.filter.submit" tabindex="1" >Submit</button><input class="btn refresh-submit d-none" type="submit" value="_SUBMIT_" /></div> </div></noscript></form>
+
+                    <div id="root.pt" style="display:none;"></div>
+                    <div  id="root.vw" > <table class="table data object table-striped">
+ <thead>
+ <th class="field-index "></th>
+ <th class="field-work ">Title</th>
+ <th class="field-credits ">Written by</th>
+ <th class="field-original ">Originally by</th>
+ <th class="field-covers text-right">Covers <i class="fa fa-caret-down fa- "></i></th>
+ <th class="field-fullAdaptations text-right"><a id="root.vw.fld.fullAdaptations" href="/statistics/stats_work_covered?sort=fullAdaptations&pageSize=6#vw" class="refresh-click">Adaptations </a></th>
+ </thead>
+ <tbody>
+  <tr >
+   <td class="field-index ">1</td>
+   <td class="field-work "><a class="link-work" href="/work/7895">Stille Nacht, heilige Nacht</a></td>
+   <td class="field-credits "><a class="link-artist" href="/artist/5773">Joseph Mohr</a>, <a class="link-artist" href="/artist/5774">Franz Gruber</a></td>
+   <td class="field-original "><a class="link-proxies\__cg__\performer" href="/artist/5773+5774">Joseph Mohr, Franz Gruber</a></td>
+   <td class="field-covers text-right">3623</td>
+   <td class="field-fullAdaptations text-right">48</td>
+  </tr>
+  <tr >
+   <td class="field-index ">2</td>
+   <td class="field-work "><a class="link-work" href="/work/4681">Summertime</a></td>
+   <td class="field-credits "><a class="link-artist" href="/artist/2213">George Gershwin</a>, <a class="link-artist" href="/artist/4029">Ira Gershwin</a>, <a class="link-artist" href="/artist/4252">DuBose Heyward</a></td>
+   <td class="field-original "><a class="link-proxies\__cg__\performer" href="/artist/2223">Abbie Mitchell</a></td>
+   <td class="field-covers text-right">2255</td>
+   <td class="field-fullAdaptations text-right">15</td>
+  </tr>
+  <tr >
+   <td class="field-index ">3</td>
+   <td class="field-work "><a class="link-work" href="/work/2981">White Christmas</a></td>
+   <td class="field-credits "><a class="link-artist" href="/artist/1096">Irving Berlin</a></td>
+   <td class="field-original "><a class="link-performer" href="/artist/243+3589+26334">Bing Crosby with Ken Darby Singers and John Scott Trotter and His Orchestra</a></td>
+   <td class="field-covers text-right">2013</td>
+   <td class="field-fullAdaptations text-right">27</td>
+  </tr>
+  <tr >
+   <td class="field-index ">4</td>
+   <td class="field-work "><a class="link-work" href="/work/12959">Minuit, chrétiens</a></td>
+   <td class="field-credits "><a class="link-artist" href="/artist/8521">Placide Cappeau</a>, <a class="link-artist" href="/artist/8522">Adolphe Charles Adam</a></td>
+   <td class="field-original "><a class="link-proxies\__cg__\performer" href="/artist/27296">Emily Laurey</a></td>
+   <td class="field-covers text-right">1969</td>
+   <td class="field-fullAdaptations text-right">16</td>
+  </tr>
+  <tr >
+   <td class="field-index ">5</td>
+   <td class="field-work "><a class="link-work" href="/work/3001">Have Yourself a Merry Little Christmas</a></td>
+   <td class="field-credits "><a class="link-artist" href="/artist/3822">Ralph Blane</a>, <a class="link-artist" href="/artist/3823">Hugh Martin</a></td>
+   <td class="field-original "><a class="link-performer" href="/artist/1424+35156">Judy Garland with Georgie Stoll and His Orchestra</a></td>
+   <td class="field-covers text-right">1923</td>
+   <td class="field-fullAdaptations text-right">12</td>
+  </tr>
+  <tr >
+   <td class="field-index ">6</td>
+   <td class="field-work "><a class="link-work" href="/work/7896">Silent Night! Holy Night!</a></td>
+   <td class="field-credits "><a class="link-artist" href="/artist/5775">John Freeman Young</a></td>
+   <td class="field-original "><a class="link-performer" href="/artist/56262">Haydn Quartet</a></td>
+   <td class="field-covers text-right">1854</td>
+   <td class="field-fullAdaptations text-right">1</td>
+  </tr>
+ </tbody>
+</table>
+</div>
+                    <div id="root.pb" style="display:none;"></div>
+                    <div  id="root.mp" class="my-3" > <a href="/statistics/stats_work_covered?page=1&pageSize=6" id="root.mp.1" class="refresh-click btn btn-secondary">More</a></div>
+            </section>
+</div>
+</div>
+    <input type="hidden" name="root" value="IwuGRhtLJ_LHMNPXVLuUlbcM-DmiJhvOE7Co5I3h-DRT34DdwRGsH1IwlbJ5ty8j_1a1ZZEzAQclubXYkRUnmbOJYM2HIA_pvGGmpqwS5R39fhrC5v-B_ZXH9OBQozNugULTOAHsidr3IVTEwJIAJH4E9FcdN9OS3elXYlX1uwWnE1IJ1WU8oLN5yemSdJ86.74J1HZTVxZXYe3aJydnakg=="/>
+    <div class="popupWindows"> 
+        
+    </div>
+</div>
+
+                    
+                                                        </div>
+                            </div>
+        </div>
+    </section>
+
+    </section>
+            <footer class="fill" id="footer">
+    <div class="container">
+        <div class="row">
+            <section class="col-sm-6 col-md-3">
+                <h2><a href="/"><img class="img-responsive" src="/art/logo-alt-small.png" alt="SecondHandSongs"/></a></h2>
+
+                <p class="lead">Discover <strong>The Original</strong></p>
+
+                <p>SecondHandSongs is building the most comprehensive source of cover song information.</p>
+
+                <p></p>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="mailto:info@secondhandsongs.com" title="Send us an e-mail">
+                            <i class="fa fa-envelope fa-3x "></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/pages/SecondHandSongs/25077961981"
+                           title="Like us on Facebook">
+                            <i class="fa fa-facebook-square fa-3x "></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/SHSongs" title="Follow us on twitter">
+                            <i class="fa fa-twitter-square fa-3x "></i>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="col-sm-6 col-md-3 footer-links">
+                <div class="text-content"><h2>About</h2>
+<ul>
+<li><a href="/page/Introduction">Introduction</a></li>
+<li><a href="/page/FAQ">FAQ</a></li>
+<li><a href="/page/Glossary">Glossary</a></li>
+<li><a href="/page/MusicLicensing">Music licensing</a></li>
+<li><a href="/page/API">API</a></li>
+<li><a href="/page/Bookmarks">Bookmarks</a></li>
+<li><a href="/page/RadioShow">Radio Show</a></li>
+<li><a href="/page/Copyright">Copyright</a></li>
+<li><a href="/page/Press">Press</a></li>
+<li><a href="/page/About">About us</a>
+<h2>Get involved</h2></li>
+<li><a href="/participate">Suggest covers and samples</a></li>
+<li><a href="https://secondhandsongs.com/page/Menu/SidebarEditor">Editor manual</a></li>
+<li><a href="https://secondhandsongs.com/page/UserLevels">User levels</a></li>
+<li><a href="/page/JoinUs">Join us</a></li>
+<li><a href="/page/Donate">Donate</a></li>
+<li><a href="/page/ContactUs">Contact us</a></li>
+</ul></div>
+            </section>
+            <section class="col-sm-6 col-md-3 footer-links">
+                                    <h2>Popular performances</h2>
+                    <ul>
+                                                    <li><a href="/performance/613789">Salapoliisin tytär</a></li>
+                                                    <li><a href="/performance/1051">Wicked Game</a></li>
+                                                    <li><a href="/performance/6392">Take Me Home, Country Roads</a></li>
+                                                    <li><a href="/performance/24222">Sweet Child o' Mine</a></li>
+                                                    <li><a href="/performance/1224015">Dancing in the Sky</a></li>
+                                                    <li><a href="/performance/2085">Wild Horses</a></li>
+                                                    <li><a href="/performance/5652">Landslide</a></li>
+                                                    <li><a href="/performance/954">Heroes</a></li>
+                                                    <li><a href="/performance/795">Perfect Day</a></li>
+                                                    <li><a href="/performance/731">All by Myself</a></li>
+                                            </ul>
+                            </section>
+            <section class="col-sm-6 col-md-3 footer-links">
+                                    <h2>Popular artists</h2>
+                    <ul>
+                                                    <li><a href="/artist/4046">Robert John &quot;Mutt&quot; Lange</a></li>
+                                                    <li><a href="/artist/28069">The-Dream</a></li>
+                                                    <li><a href="/artist/3187">Bob Gaudio</a></li>
+                                                    <li><a href="/artist/101781">Rita Faye</a></li>
+                                                    <li><a href="/artist/71451">Walter Earl Brown</a></li>
+                                                    <li><a href="/artist/70498">Pat Carroll [AU]</a></li>
+                                                    <li><a href="/artist/45828">Michael Houser</a></li>
+                                                    <li><a href="/artist/41107">Linda Thompson [US]</a></li>
+                                                    <li><a href="/artist/76669">Honi Gordon</a></li>
+                                                    <li><a href="/artist/175888">Paul Fuster</a></li>
+                                            </ul>
+                            </section>
+        </div>
+        <div class="row col-md-12" id="path-closure">
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="/page/About">&copy; 2003-2022
+                        secondhandsongs.com</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="/page/TermsOfService">Terms of Service</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="/page/PrivacyPolicy">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+        
+    <script>
+        var formToken = null;
+    </script>
+    <script>
+        $(document).ready(function () {
+            var hash = window.location.hash;
+            if (hash.indexOf("#_") === 0) {
+                hash = window.location.hash.substring(2);
+                var offset = $("a[name=" + hash + "]").offset();
+                window.scrollTo(offset.left, offset.top - $(window).height() / 3);
+            }
+        });
+    </script>
+    <!-- Universal Analytics: deprecated, to be removed July 1, 2023 -->
+    <script>
+        var _gaq = [
+            ['_setAccount', 'UA-129438-1'],
+            ['_trackPageview']
+        ];
+        _gaq.push(['_setCustomVar', 1, 'Member Type', 'Visitor', 1]);
+        (function (d, t) {
+            var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g, s)
+        }(document, 'script'));
+    </script>
+    </body>
+</html>
