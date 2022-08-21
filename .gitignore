@@ -42,6 +42,8 @@ coverage.xml
 # Build and docs folder/files
 build/*
 dist/*
+cachedir/*
+cachedir/
 sdist/*
 docs/api/*
 docs/_rst/*
@@ -53,3 +55,5 @@ MANIFEST
 .venv*/
 .conda*/
 .python-version
+
+slice.csv
