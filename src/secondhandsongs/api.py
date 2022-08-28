@@ -1,6 +1,6 @@
 import requests
 from . import models as m
-from datetime import datetime, timedelta
+from datetime import datetime
 from time import sleep
 import logging
 from diskcache import Cache
@@ -8,6 +8,7 @@ from diskcache import Cache
 BASE_URI = 'https://secondhandsongs.com/%s'
 PREVIOUS_REQUESTS = []
 cache = Cache("cachedir")
+
 
 class Api:
 
@@ -28,9 +29,11 @@ class Api:
         return m.Work(self, ret.json())
 
     def get_release(self):
+        # TODO: to be implemented
         pass
 
     def get_label(self):
+        # TODO: to be implemented
         pass
 
     @cache.memoize()
@@ -47,20 +50,18 @@ class Api:
 
         hrs = [(t - x).seconds for x in PREVIOUS_REQUESTS]
         hrs = [s for s in hrs if s < 3600]
-        # print("Reqs per hour: ", self.reqs_per_hour, "current:", len(hrs))
         if len(hrs) >= self.reqs_per_hour + 1:
             sleep_time = 3600 - max(hrs)
-            logging.warn("Reqs per Hour Exceeded. Sleeping f{sleep_time} seconds.")
+            logging.warn("Reqs per Hour Exceeded. Sleeping f{sleep_time}s")
             sleep(sleep_time)
             logging.warn("Resuming...")
 
         secs = [(t - x).seconds for x in PREVIOUS_REQUESTS]
         secs = [s for s in secs if s < 60]
 
-        # print("Reqs per minute: ", self.reqs_per_minute, "current:", len(secs))
         if len(secs) >= self.reqs_per_minute + 1:
             sleep_time = 60 - max(secs)
-            logging.warn("Reqs per Minute Exceeded. Sleeping f{sleep_time} seconds.")
+            logging.warn("Reqs per Minute Exceeded. Sleeping f{sleep_time}s")
             sleep(sleep_time)
             logging.warn("Resuming...")
 

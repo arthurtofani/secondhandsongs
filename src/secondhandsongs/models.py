@@ -1,8 +1,6 @@
-import json
-from types import SimpleNamespace
-
 class Base():
     namespace = None
+
     def __init__(self, api, args):
         self.api = api
 
@@ -58,17 +56,21 @@ class Performance(Base):
 
     def _get_yt_link(self, external_uri, args):
         try:
-            self.youtube_url = [x['uri'] for x in args.get('external_uri') if x['site'] == 'YouTube'][0]
+            self.youtube_url = self._get_link(args, 'YouTube')
             self.has_youtube_link = True
         except IndexError:
             pass
 
     def _get_sp_link(self, external_uri, args):
         try:
-            self.spotify_url = [x['uri'] for x in args.get('external_uri') if x['site'] == 'Spotify'][0]
+            self.spotify_url = self._get_link(args, 'Spotify')
             self.has_spotify_link = True
         except IndexError:
             pass
+
+    def _get_link(self, args, svc):
+        external_uri = args.get('external_uri')
+        return [x['uri'] for x in external_uri if x['site'] == svc][0]
 
 
 class Work(Base):
