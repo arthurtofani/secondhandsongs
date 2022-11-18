@@ -9,7 +9,7 @@ Python API Wrapper for SecondHandSongs.com API
 ## Features:
 
 * Supports SHS API key
-* Automatic throttling control
+* Automatic throttle control
 * Cached requests
 * Download Youtube and Spotify content (may require specific API keys)
 
