@@ -43,8 +43,8 @@ def print_performance(p):
     print("youtube_url:", p.youtube_url)
     print("spotify_url:", p.spotify_url)
 
-SHS_API_KEY = os.getenv('SHS_API_KEY')
-#API_KEY = "YOUR_SHS_API_KEY"
+
+API_KEY = "YOUR_SHS_API_KEY"
 api = Api(api_key=SHS_API_KEY)
 
 performance_id = 290542
