@@ -196,8 +196,8 @@ from secondhandsongs import dataset as ds
 from secondhandsongs import Api
 
 # Set the folder where the dataset will be generated
-OUTPUT_FOLDER = '/home/arthur/tmp/aaas'
-DATASET_FILE = '/home/arthur/tmp/aaas/slice2.csv'
+OUTPUT_FOLDER = './output'
+DATASET_FILE = './slice.csv'
 
 # Loading the API key from an .env file using dotenv
 load_dotenv()
