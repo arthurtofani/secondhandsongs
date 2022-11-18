@@ -17,15 +17,15 @@ class Api:
         self.set_throughput_rates()
 
     def get_artist(self, artist_id):
-        ret = self.get('artist', artist_id)
-        return m.Artist(ret)
+        ret = self.get('artist', str(artist_id))
+        return m.Artist(self, ret)
 
     def get_performance(self, performance_id):
-        ret = self.get('performance', performance_id)
+        ret = self.get('performance', str(performance_id))
         return m.Performance(self, ret.json())
 
     def get_work(self, work_id):
-        ret = self.get('work', work_id)
+        ret = self.get('work', str(work_id))
         return m.Work(self, ret.json())
 
     def get_release(self):
@@ -36,7 +36,7 @@ class Api:
         # TODO: to be implemented
         pass
 
-    @cache.memoize()
+    #@cache.memoize()
     def get(self, namespace, idx):
         url = '%s/%s' % (namespace, idx)
         headers = {'Accept': 'application/json',

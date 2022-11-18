@@ -20,6 +20,6 @@ def test_get_performance():
     ds = Dataset()
     api = Api(api_key=API_KEY)
     output_folder = '/data/csi/datasets/shs'
-    ds.create_slice('slice.csv', output_folder, api, num_queries=80,
+    ds.create_slice('slice.csv', output_folder, api, num_items=80,
                     cluster_size=40,
                     stopwords=STOPWORDS)

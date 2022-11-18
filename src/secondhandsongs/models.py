@@ -3,6 +3,7 @@ class Base():
 
     def __init__(self, api, args):
         self.api = api
+        self.response = args
 
 
 class Artist(Base):
@@ -31,15 +32,21 @@ class Performance(Base):
         self.title = args['title']
         self.uri = args['uri']
         self.performer_name = args['performer']['name']
+        self.performer_id = args['performer']['uri'].split('/')[-1]
         self.cover_ids = [a['uri'].split('/')[-1] for a in args['covers']]
         self.covers = None
         self.originals = [a['uri'].split('/')[-1] for a in args['originals']]
+        self.work_ids = [a['uri'].split('/')[-1] for a in args['works']]
+        self.release_ids = [a['uri'].split('/')[-1] for a in args['releases']]
         self.is_original = args['isOriginal']
         self.has_spotify_link = False
         self.has_youtube_link = False
         self.youtube_url = None
         self.spotify_url = None
         self._get_links(args)
+
+    def get_works(self):
+        return [self.api.get_work(x) for x in self.work_ids]
 
     def get_covers(self):
         return [self.api.get_performance(x) for x in self.cover_ids]
@@ -83,3 +90,5 @@ class Work(Base):
         self.uri = args['uri']
         self.language = args['language']
         self.versions = args['versions']
+        self.version_ids = [a['uri'].split('/')[-1] for a in args['versions']]
+

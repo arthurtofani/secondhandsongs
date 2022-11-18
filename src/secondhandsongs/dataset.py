@@ -11,10 +11,10 @@ COLS = ['work_id', 'performance_id', 'title', 'url']
 
 class Dataset:
 
-    def create_slice(self, csv_file, output_folder, api, num_queries=30,
+    def create_slice(self, csv_file, output_folder, api, num_items=30,
                      cluster_size=11, stopwords=[]):
         df_out = pd.DataFrame(columns=COLS)
-        works = self.get_work_ids(num_queries, skip=DEFAULT_SKIP)
+        works = self.get_work_ids(num_items, skip=DEFAULT_SKIP)
         for work_id in tqdm(works, total=len(works)):
             w = api.get_work(work_id)
             self._get_performance_versions(w, df_out, api, cluster_size,
@@ -42,8 +42,8 @@ class Dataset:
                                                    pp.youtube_url]
                     return df_out
 
-    def get_work_ids(self, num_queries, skip=0):
-        html = BeautifulSoup(self.get_list(num_queries + skip).text)
+    def get_work_ids(self, num_items, skip=0):
+        html = BeautifulSoup(self.get_list(num_items + skip).text, features="lxml")
         r = html.find_all("a", {"class": "link-work"})
         return [x.get('href').split('/')[-1] for x in r][skip:]
 
