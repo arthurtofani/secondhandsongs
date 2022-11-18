@@ -1,9 +1,24 @@
+[project]
+name = "secondhandsongs"
+version = "1.0.0"
+authors = [
+  { name="Arthur Tofani", email="gramofone@gmail.com" },
+]
+description = "Python API Wrapper for SecondHandSongs.com API"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"SecondHandSongs.com" = "https://secondhandsongs.com/"
+
 [build-system]
-# AVOID CHANGING REQUIRES: IT WILL BE UPDATED BY PYSCAFFOLD!
 requires = ["setuptools>=46.1.0", "setuptools_scm[toml]>=5"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools_scm]
-# For smarter version schemes and other configuration options,
-# check out https://github.com/pypa/setuptools_scm
 version_scheme = "no-guess-dev"
