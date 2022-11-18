@@ -211,7 +211,7 @@ STOPWORDS = ['Christmas', 'Santa', 'Claus', 'Silent Night', 'God',
              'Bells', 'Nosed', 'Glory', 'Pachelbel', 'Jesus',
              'Greensleeves', 'Snowman', 'Noel', 'Noël' ]
 
-# Build a dataset slice with 80 different works, with 5 performances per work
+# Build a dataset slice with 80 different works, with 4 performances per work
 ds.Dataset().create_slice(DATASET_FILE, OUTPUT_FOLDER, api,
                           num_items=80,
                           cluster_size=4,
