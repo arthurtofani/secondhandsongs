@@ -44,7 +44,7 @@ def print_performance(p):
     print("spotify_url:", p.spotify_url)
 
 
-API_KEY = "YOUR_SHS_API_KEY"
+SHS_API_KEY = "YOUR_SHS_API_KEY"
 api = Api(api_key=SHS_API_KEY)
 
 performance_id = 290542
