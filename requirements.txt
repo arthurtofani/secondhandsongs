@@ -1,0 +1,4 @@
+python-dotenv
+diskcache
+youtube-dl
+tqdm
