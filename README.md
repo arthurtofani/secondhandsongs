@@ -214,10 +214,25 @@ STOPWORDS = ['Christmas', 'Santa', 'Claus', 'Silent Night', 'God',
 # Build a dataset slice with 80 different works, with 5 performances per work
 ds.Dataset().create_slice(DATASET_FILE, OUTPUT_FOLDER, api,
                           num_items=80,
-                          cluster_size=5,
+                          cluster_size=4,
                           stopwords=STOPWORDS)
 
 # download the performances contained in the novel dataset file
 dl.yt_download(DATASET_FILE, OUTPUT_FOLDER)
 ```
 
+the resulting dataset will be like this:
+
+```
+work_id,performance_id,title,url
+21356,312493,The Little Drummer Boy,https://www.youtube.com/watch?v=vujkelpIfEk
+21356,321027,Little Drummer Boy,https://www.youtube.com/watch?v=nk9zMGGtRC4
+21356,332119,Little Drummer Boy,https://www.youtube.com/watch?v=zYkQssoj2FU
+21356,341595,The Little Drummer Boy,https://www.youtube.com/watch?v=rxaTD_bHjK8
+1409,323951,Yesterday,https://www.youtube.com/watch?v=dWO_HpkY-N0
+1409,326659,Yesterday,https://www.youtube.com/watch?v=MaDlTw5nG7I
+1409,338349,Yesterday,https://www.youtube.com/watch?v=RMh_wTZEvk8
+1409,346860,Yesterday,https://www.youtube.com/watch?v=1XjU6unPID0
+...
+
+```
