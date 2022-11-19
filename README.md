@@ -235,3 +235,6 @@ work_id,performance_id,title,url
 ...
 
 ```
+
+Credits:
+[www.SecondHandSongs.com](http://www.secondhandsongs.com)
