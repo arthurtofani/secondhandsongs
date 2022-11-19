@@ -201,8 +201,8 @@ DATASET_FILE = './slice.csv'
 
 # Loading the API key from an .env file using dotenv
 load_dotenv()
-API_KEY = os.getenv('SHS_API_KEY')
-api = Api(api_key=API_KEY)
+SHS_API_KEY = os.getenv('SHS_API_KEY')
+api = Api(api_key=SHS_API_KEY)
 
 
 # You can set a list of stopwords

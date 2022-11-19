@@ -1,6 +1,6 @@
 [project]
 name = "secondhandsongs"
-version = "1.0.0"
+version = "1.0.1"
 authors = [
   { name="Arthur Tofani", email="gramofone@gmail.com" },
 ]
