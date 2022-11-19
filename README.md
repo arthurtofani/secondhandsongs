@@ -1,7 +1,6 @@
 # SecondHandSongs.com Python API Wrapper
 
-Python API Wrapper for (www.SecondHandSongs.com)[www.SecondHandSongs.com] API
-
+Python API Wrapper for [SecondHandSongs.com](http://www.secondhandsongs.com) API
 
 
 ----------------------
